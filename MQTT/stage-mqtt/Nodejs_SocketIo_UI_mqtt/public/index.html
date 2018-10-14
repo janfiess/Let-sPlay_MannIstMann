@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Audience Controller</title>
+
+  
+
+</head>
+
+<body>
+  <img id="bgimg" src="bg.jpg" />
+
+  <div class="myViewport">
+
+    <div class="row" id="section_question">
+      <div id="question">huuhuhuu</div>
+    </div>
+    <div class="row" id="section_vote">
+      <div class="col-sxs-12 col-sm-6">
+        <div class="vote_button">
+
+          <button type="button" id="btn_yes" class="btn btn-primary btn-circle btn-xl">
+            <div class="glyphicon glyphicon-thumbs-up like_icon"></div>
+            <!-- YES -->
+          </button>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <div class="vote_button">
+          <button type="button" id="btn_no" class="btn btn-warning btn-circle btn-xl">
+              <div class="glyphicon glyphicon-thumbs-up like_icon"></div>
+            <!-- NO -->
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="statusMsgContainer">
+      <div id="statusMsg">Refreshing app ...</div>
+    </div>
+    <!-- Stopwatch -->
+
+    <div id="stopwatchContainer">
+      <img id="logo" src="fabw.jpeg" alt="FABW logo">
+      <img id="refresh" src="refresh.png" alt="Refresh">
+      <div id="stopwatch"></div>
+    </div>
+    <!-- <div id="console"></div> -->
+
+
+  </div>
+
+  <div id="flashpanel">flash</div>
+
+
+
+
+
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" id="bootstrap-css"> -->
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
+  <script>
+    $(document).ready(function () {
+      var isStopwatchInitialized = false;
+
+
+
+
+
+
+
+      $('#refresh').click(function () {
+        location.reload();
+      });
+
+
+
+      var windowwidth = $(window).width();
+      var windowheight = $(window).innerHeight();
+      $('.btn-circle.btn-xl').css("width", windowwidth * 2 / 5);
+      $('.btn-circle.btn-xl').css("height", windowwidth * 2 / 5);
+      $('#myViewport').css("height", windowheight);
+      // console.log(windowheight);
+      $('#console').text(windowheight);
+
+
+
+
+
+
+
+
+
+      // var currentMode = 'startMode';
+
+      var isClicked = false;
+      var socket = io();
+
+      $('#question').hide();
+      $('#btn_yes').hide();
+      $('#btn_no').hide();
+      $('#statusMsg').show();
+      $('#stopwatch').hide();
+
+
+
+
+      /**
+       * This app has several modes controlled globally by the server (user interface):
+       * 0. Wait mode (until the phone refreshes - hardcoded into html)
+       * 1. start mode (shown before the show starts)
+       * 2. vote mode (shown when the audience is asked to vote)
+       * 3. restTime mode (shown when the user has already voted, but is still in time)
+       * 4. standby mode (shown between the questions)
+       * 5. end mode (shown when the show has ended)
+       */
+
+
+      // Start mode (1)
+      socket.on('startMode', function () {
+        $('#statusMsg').fadeOut(500, function () {
+          var $this = $(this);
+          $this.text($this.text() == 'ahoi' ? '' : 'Wait until the show starts.\n When you are asked to make a decision, press YES or NO');
+          $this.fadeIn(500);
+        });
+
+        $('#question').hide();
+        $('#btn_yes').hide();
+        $('#btn_no').hide();
+        $('#stopwatch').hide();
+      });
+
+      // Vote mode (2)
+      socket.on('voteMode', function (msg) {
+        navigator.vibrate(1000);
+        isClicked == false;
+        $('#statusMsg').fadeOut();
+        $('#question').text(msg);
+        $('#question').fadeIn();
+
+        
+
+        $('#flashpanel').fadeTo(700, 0.85, function () {
+          $('#flashpanel').fadeOut(700, function () {
+            $('#btn_yes').fadeIn();
+            $('#btn_no').fadeIn();
+          });
+        });
+
+      });
+
+
+
+
+
+      // Stopwatch
+      socket.on('stopwatch', function (restTime) {
+
+        // console.log(restTime);
+        if (isStopwatchInitialized == false) {
+          $('#stopwatch').show();
+          // $('#stopwatch').text(restTime);
+          startLocalStopwatch(restTime);
+          isStopwatchInitialized = true;
+        }
+
+        if (restTime == 0) {
+          $('#stopwatch').delay(700).fadeOut();
+          isStopwatchInitialized = false;
+        }
+      });
+
+      var localRestTime = 0;
+      var myVar;
+      function startLocalStopwatch(restTime) {
+        localRestTime = restTime;
+
+        $('#stopwatch').text(localRestTime);
+        myVar = setInterval(runLocalStopwatch, 1000);
+      }
+
+      function runLocalStopwatch() {
+        if (localRestTime >= 0) {
+          localRestTime -= 1;
+          // console.log(localRestTime);
+          $('#stopwatch').text(localRestTime);
+        };
+        if (localRestTime <= 0) {
+          clearInterval(myVar);
+        };
+      }
+
+
+
+
+      // audience interactions
+      $('#btn_yes').click(function () {
+        isClicked == true;
+        if (isClicked == true) return;
+        socket.emit('vote', "d");
+        navigator.vibrate([100, 50]);
+        $("#btn_yes").delay(50).toggle("puff");
+        $('#btn_no').toggle("scale");
+        $('#question').fadeOut();
+        restTimeMode();
+        return false;
+      });
+
+      $('#btn_no').click(function () {
+        isClicked == true;
+        if (isClicked == true) return;
+        socket.emit('vote', "a");
+        navigator.vibrate([100, 50, 100, 50]);
+        $('#btn_yes').toggle("scale");
+        $("#btn_no").delay(50).toggle("puff");
+        $('#question').fadeOut();
+        restTimeMode();
+        return false;
+      });
+
+
+
+
+
+
+
+      // RestTime mode (3)
+      function restTimeMode() {
+        $('#statusMsg').fadeOut(500, function () {
+          var $this = $(this);
+          $this.text($this.text() == 'ahoi' ? '' : 'hold on *_*');
+          $this.delay(500).fadeIn(500);
+        });
+      }
+
+      // Standby mode (4)
+      socket.on('standbyMode', function () {
+        console.log('standbyMode');
+
+        // display flash then standbyMode starts
+
+        $('#flashpanel').fadeTo(700, 0.3, function () {
+          $('#flashpanel').fadeOut(700);
+        });
+
+
+
+        $('#statusMsg').fadeOut(500, function () {
+          var $this = $(this);
+          $this.text($this.text() == 'ahoi' ? '' : 'Watch the stage');
+          $this.delay(500).fadeIn(500);
+        });
+
+        // $('#statusMsg').text("Watch the stage");
+        // $('#statusMsg').fadeIn(500);
+
+
+        $('#question').fadeOut();
+        $('#btn_yes').fadeOut();
+        $('#btn_no').fadeOut();
+        $('#stopwatch').hide();
+
+      });
+
+      // End mode (5)
+      socket.on('endMode', function () {
+        // $('#statusMsg').animate({opacity: '0'},500).delay(500).text("").delay(1000).text("End of performance").animate({opacity: '1'},500);
+
+        $('#statusMsg').fadeOut(500, function () {
+          var $this = $(this);
+          $this.text($this.text() == 'End of performance' ? '' : 'End of performance');
+          $this.delay(500).fadeIn(500);
+        });
+
+        $('#question').fadeOut();
+        $('#btn_yes').fadeOut();
+        $('#btn_no').fadeOut();
+        $('#stopwatch').hide();
+      });
+
+
+
+
+
+
+    });
+    // bgimg
+    $(window).resize(function () {
+      resizeimg();
+    });
+
+    resizeimg(showImg);
+
+    function resizeimg(callback) {
+      var bgwidth = $(document).width(),
+        bgheight = $(document).height();
+      $('#bgimg').attr({ width: bgwidth, height: bgheight });
+      // $('#flashpanel').attr({ width: bgwidth, height: bgheight });
+      callback(); // call showImg
+    }
+
+    function showImg() {
+      $("#bgimg").delay(1000).fadeIn(1000);
+    }
+    // bgimg end
+
+  </script>
+</body>
+
+</html>

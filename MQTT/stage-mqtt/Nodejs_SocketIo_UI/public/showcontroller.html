@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Show Controller</title>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <p>
+    This app has several modes: </br>
+    1. start mode (shown before the show starts)</br>
+    2. vote mode (shown when the audience is asked to vote)</br>
+    3. restTime mode (shown when the user has already voted, but is still in time - not called globally)</br>
+    4. standby mode (shown between the questions)</br>
+    5. end mode (shown when the show has ended)
+    </p>
+    
+    
+    <button id="startMode">Start mode (1)</button>
+    <button id="voteMode">Vote mode (2)</button>
+    <button id="standbyMode">Standby mode (4)</button>
+    <button id="endMode">End mode (5)</button>
+    
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+            var socket = io();
+
+            var counter = 0;
+
+            //  Start mode (1)
+            $('#startMode').click(function () {
+                socket.emit('startMode');
+                return false;
+            });
+
+            // Vote Mode (2)
+            $('#voteMode').click(function () {
+                counter++;
+                // var question = "Question " + counter;
+                var question = "Vote HIM or HER"
+                socket.emit('voteMode', question);
+                return false;
+            });
+
+            //  Standby mode (4)
+            $('#standbyMode').click(function () {
+                socket.emit('standbyMode');
+                return false;
+            });
+
+            //  End mode (5)
+            $('#endMode').click(function () {
+                socket.emit('endMode');
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

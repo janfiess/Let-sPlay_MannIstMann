@@ -1,0 +1,26 @@
+{
+  "name": "nodejs_mqtt",
+  "version": "0.1.0",
+  "description": "Website publishing MQTT messages when pressing a button and suscribing to MQTT nessages",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janfiess/stage_mqtt.git"
+  },
+  "keywords": [
+    "MQTT"
+  ],
+  "author": "Jan Fiess",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janfiess/stage_mqtt/issues"
+  },
+  "homepage": "http:janfiess.com",
+  "dependencies": {
+    "mqtt": "^2.16.0"
+  }
+}

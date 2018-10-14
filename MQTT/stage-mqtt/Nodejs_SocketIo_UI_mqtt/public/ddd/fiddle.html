@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+  <title>Vibrator API</title>
+
+  <script type="text/javascript">
+    function vib_once() {
+      navigator.vibrate(1000);
+    }
+
+    function vib_yes() {
+      navigator.vibrate([100, 50]);
+    }
+
+    function vib_no() {
+      navigator.vibrate([100, 50, 100, 50]);
+    }
+
+    function vib_interrupt() {
+      navigator.vibrate(0);
+    }
+
+  </script>
+</head>
+
+<body>
+  <button id="vibrate-one-second" onclick="vib_once()">Vote mode</button>
+  <button id="vibrate-twice" onclick="vib_yes()">Yes</button>
+  <button id="vibrate-long-time" onclick="vib_no()">No</button>
+  <button id="vibrate-off" onclick="vib_interrupt()">Interrupt vibration</button>
+</body>
+
+</html>
