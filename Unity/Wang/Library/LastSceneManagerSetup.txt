@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Module 4/S6.unity
+  isLoaded: 0
+  isActive: 0

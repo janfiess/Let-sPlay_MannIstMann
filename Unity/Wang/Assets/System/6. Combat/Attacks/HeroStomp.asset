@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef736a983f955cf428cba708b3dabdab, type: 3}
+  m_Name: HeroStomp
+  m_EditorClassIdentifier: 
+  Cooldown: 5
+  range: 0.1
+  minDamage: 40
+  maxDamage: 50
+  criticalMultiplier: 2
+  criticalChance: 0.3
+  aoeObject: {fileID: 114619353959319780, guid: 786435793372386479a9026a5edf6e93,
+    type: 2}
+  radius: 3
