@@ -1,0 +1,460 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1890111309, guid: 7668179ede524d6396c8b7d84461ea29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeInFrames: 1
+  timeAreaShownRange: {x: -11.791608, y: 478.7393}
+  showAudioWaveform: 1
+  trackHeight: 30
+  trackScale: 1
+  playRangeEnabled: 0
+  timeAreaPlayRange: {x: 3.4028235e+38, y: 3.4028235e+38}
+  windowTime: 0
+  verticalScroll: 3319
+  m_Keys:
+  - {fileID: 114357044942672428, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114666888569425368, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114453743103909324, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114023989274796264, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114160227604685034, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114229732284716204, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114672377040636576, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114549744124915730, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114776136516146052, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114503733032825210, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114954752889194196, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114852851718218648, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114612305804195506, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114088802391532412, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114406937783515628, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114361209848130240, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114716752139085934, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114001019489412714, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114839369908135406, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114371874316563958, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114895854812838894, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114861385080401372, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114174514070314816, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114347319897037440, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114243787472006648, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114087625818257074, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114452879049602234, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114300215450043644, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114745570243027568, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114140096497031408, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114180167702034690, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114715859718082702, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114825105887744412, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114252993395912558, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114533549322541990, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114211333718393028, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114944452428149692, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114847246676396708, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114701215159072744, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114706141915699844, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114029784175453746, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114619780081447338, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114038069402942162, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114465585622130474, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114743008737447238, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114666594908438070, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114725799579642064, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114651191638568600, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114127300471356596, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114525292656472504, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114864894446841346, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114774046019088208, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114652757582573792, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114376949290063892, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114093028720819230, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114879240817595832, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114047429310603708, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114025169875737580, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114764573470377234, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114785294271994520, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114497725657076384, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114789250184768334, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114970180914512488, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114741732227985670, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114029686911079536, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114673689244737936, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114396319834646376, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114399268432720136, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114132342152505290, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114464249106542024, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114081536953469966, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114431717003160304, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114221767886107074, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114975013701940158, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114049541014528498, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114880810297980686, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114021526652014782, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114877161451809106, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114754701960700012, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114298686622412526, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114674887160884202, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114737921105516496, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114701731018466830, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114518157605474834, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114007342200688660, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114104197740835264, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114968177417564376, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114792391934449834, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114948648291884392, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114961755802446818, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114332066889455956, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114370629031835256, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114259991523773592, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114599921161712316, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114398013910670398, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114515705131129138, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114512538971036492, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114533897113683502, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114271056354556670, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114724960409387700, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114944135798707920, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114114690034348496, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114641682901840500, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114178469841365820, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114414101006190776, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114442597840767218, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114472623247823600, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114109175011575182, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  - {fileID: 114046870318716554, guid: b5a0caf6b446bdf499fcd52bcd6135b7, type: 2}
+  m_Vals:
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
